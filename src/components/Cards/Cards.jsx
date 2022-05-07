@@ -1,9 +1,9 @@
 import React from 'react';
 import { CardsData } from '../../Data/Data';
 import './Cards.css';
-import Card from './../Card/Card';
+import Card from './../Card/Card';  
 
-const Cards = () => {
+const Cards = () => { 
     return (
         <div className="Cards">
             {CardsData.map((card, id) => {
@@ -12,7 +12,7 @@ const Cards = () => {
                         <Card
                         title={card.title}
                         color={card.color}
-                        carValue={card.barValue}
+                        barValue={card.barValue}
                         value={card.value}
                         png={card.png}
                         series={card.series}
